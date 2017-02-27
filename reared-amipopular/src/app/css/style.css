@@ -1,0 +1,275 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.button_1 {
+	height: 38px;
+	background-color: #e8491d;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.dark {
+	padding: 15px;
+	background: #35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.loader {
+	text-align: center;
+	width: 100%;
+}
+
+/* Header */
+header {
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	/*min-height: 70px;*/
+	/*border-bottom: #e8491d 3px solid;*/
+}
+
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding {
+	float: left;
+}
+
+header #branding h1 {
+	margin: 0;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a {
+	color: #e8491d;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #e8491d;
+}
+
+/* Showcase */
+#showcase {
+	min-height: 355px;
+	background: url('../img/showcase.jpg') no-repeat;
+	color: #ffffff;
+	text-align: center;
+	background-size: 100% 100%;
+	border-bottom: #e8491d 3px solid;
+}
+
+#showcase h1 {
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+#showcase p {
+	font-size: 20px;
+}
+
+/* Search */
+#search {
+	color: #ffffff;
+	background-color: #35424a;
+	border-bottom: #e8491d 3px solid;
+}
+
+#search form {
+	width: 50%;
+    margin-left: 20%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+#search input[type="text"] {
+	padding: 3px;
+    height: 20px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+#search input::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+/* Newsletter */
+#newsletter {
+	padding: 15px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #35424a;
+}
+
+#newsletter h3 {
+	float: left;
+}
+
+#newsletter form {
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+/* Boxes */
+#boxes {
+	margin-top: 20px;
+}
+
+#boxes .box {
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+
+#boxes .box > img {
+	width: 90px;
+}
+
+#boxes .more-image-box > img {
+	width: 300px;
+    height: 200px;
+    border: #e8491d 3px solid;
+}
+
+/* Sidebar */
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+	width: 90%;
+	padding: 5px;
+}
+
+/* Main-col */
+article#main-col {
+	float: left;
+	width: 65%;
+}
+
+/* Services */
+ul#services  li {
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6;
+}
+
+/* Signin */
+#signin .button_1 {
+	margin-top: 10px;
+}
+
+#signin input {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+/* Footer */
+footer {
+	padding: 20px;
+	color: #ffffff;
+	background-color: #e8491d;
+	text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+	header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar {
+		float: none;
+		text-align: center;
+		width: 100%;
+		padding: 0 10px 0 10px;
+	}
+
+	header {
+		padding-bottom: 20px;
+	}
+
+	#showcase {
+		min-height: 255px;
+	}
+
+	#showcase h1 {
+		margin-top: 40px;
+		font-size: 25px;
+	}
+
+	#showcase p {
+		font-size: 15px;
+	}
+
+	#newsletter button, .quote button, #signin button {
+		display: block;
+		width: 100%;
+	}
+
+	#newsletter form input[type="email"], .qutoe input, .quote textarea {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	#search form {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#search input[type="text"] {
+		width: 97%;
+	}
+
+	#signin input {
+		width: 95%;
+	}
+}

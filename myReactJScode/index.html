@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redux basic example</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="_fakeServerApi/index.js"></script>
+    <script src="libs/redux.min.js"></script>
+    <script src="actions/index.js"></script>
+    <script src="reducers/counter.js"></script>
+    <script src="reducers/sum.js"></script>
+    <script src="reducers/images.js"></script>
+    <script src="reducers/index.js"></script>
+    <script src="middlewares/index.js"></script>
+  </head>
+  <body>
+    <div>
+      <p>
+        Clicked: <span id="value">?</span> times
+        <button id="decrement">Decrease</button>
+        <button id="incrementAsync">Increment async</button>
+        <br>CountStatus: <span id="status" style="color: blue;"></span>
+      </p>
+      <p>
+        <input id="a" value="1"/> + <input id="b" value="2"/>
+        = <span id="value2">?</span>
+        <button id="sum">Sum</button>
+      </p>
+      <button id="randomImagesButton">Random Images</button>
+      <br>ImagesStatus: <span id="imagesStatus" style="color: blue;"></span>
+      <p id="imagesList"></p>
+    </div>
+    <script>
+        $('#decrement').on('click', function () {
+            store.dispatch(decrease());
+        });
+        
+        $('#incrementAsync').on('click', function () {
+            store.dispatch(asyncIncrease); // execute increment () method after 5000 millisecond or 5 second
+        });
+        
+        $('#sum').on('click', function () {
+            const a = $('#a').val();
+            const b = $('#b').val();
+            store.dispatch(getSum(a, b));
+        });
+        
+        $('#randomImagesButton').on('click', function () {
+            store.dispatch(getRandomImages);
+        });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
