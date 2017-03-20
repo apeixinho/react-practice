@@ -4,34 +4,30 @@ var path = require('path');
 var DIST_DIR = path.resolve(__dirname, 'dist'),
 	SRC_DIR = path.resolve(__dirname, 'src');
 
-var env = process.env.WEBPACK_ENV;
+var WEBPACK_ENV = process.env.WEBPACK_ENV = process.env.NODE_ENV = (process.argv.indexOf('-p') !== -1)?'production':'development';
 
-var fileName,
-	bundleName = 'bundle',
-	plugins = [
-		new webpack.ProvidePlugin({
-			jQuery: 'jquery',
-			$: 'jquery',
-			jquery: 'jquery'
-		})
-	];
+var plugins = [
+	new webpack.ProvidePlugin({
+		jQuery: 'jquery',
+		$: 'jquery',
+		jquery: 'jquery'
+	})
+];
 
-if (env === 'production') {
+if(WEBPACK_ENV === 'production') {
 	plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: true, compressor: { warnings: true } }));
 	plugins.push(new webpack.LoaderOptionsPlugin({ minimize: true }));
 	plugins.push(new webpack.DefinePlugin({
          'process.env': {
-            'WEBPACK_ENV': '"production"'
+            'WEBPACK_ENV': JSON.stringify(WEBPACK_ENV)
          }
     }));
-	fileName = bundleName+'.min.js';
 } else {
 	plugins.push(new webpack.DefinePlugin({
          'process.env': {
-            'WEBPACK_ENV': '"development"'
+            'WEBPACK_ENV': JSON.stringify(WEBPACK_ENV)
          }
     }));
-	fileName = bundleName+'.js';
 }
 
 var config = {
@@ -39,7 +35,7 @@ var config = {
 	entry: SRC_DIR + '/app/index.js',
 	output: {
 		path: DIST_DIR + '/app',
-		filename: fileName,
+		filename: 'bundle.js',
 		publicPath: '/app/'
 	},
 	plugins: plugins,
