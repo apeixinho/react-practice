@@ -65,15 +65,8 @@ var config = {
                 test: /\.css$/, 
                 include: SRC_DIR,
                 use: [
-					{
-						loader: 'style-loader'
-					}, 
-					{
-						loader: 'css-loader',
-						options: {
-							importLoaders: 1
-						}
-					}
+					'style-loader',
+					'css-loader'
 				]
             },
             {
