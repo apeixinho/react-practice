@@ -117,8 +117,8 @@
 				_reactRouter.Route,
 				{ path: '/', component: _Root2.default },
 				_react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-				_react2.default.createElement(_reactRouter.Route, { path: 'about-us', component: _About2.default }),
-				_react2.default.createElement(_reactRouter.Route, { path: 'services', component: (0, _require_auth2.default)(_Services2.default) }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'about-us', component: (0, _require_auth2.default)(_About2.default) }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'services', component: _Services2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'signin', component: _Signin2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'signout', component: _Signout2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'signup', component: _Signup2.default })
@@ -29553,7 +29553,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\r\n\tfont-family: Arial, Helvetica, sans-serif;\r\n    font-size: 15px;\r\n    line-height: 1.5;\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n\tbackground-color: #f4f4f4;\r\n}\r\n\r\n/* Global */\r\n.container {\r\n\twidth: 80%;\r\n\tmargin: auto;\r\n\toverflow: hidden;\r\n}\r\n\r\nul {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n\r\n.button_1 {\r\n\theight: 38px;\r\n\tbackground-color: #e8491d;\r\n\tborder: 0;\r\n\tpadding-left: 20px;\r\n\tpadding-right: 20px;\r\n\tcolor: #ffffff;\r\n\tcursor: pointer;\r\n}\r\n\r\n.dark {\r\n\tpadding: 15px;\r\n\tbackground: #35424a;\r\n\tcolor: #ffffff;\r\n\tmargin-top: 10px;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.loader {\r\n\ttext-align: center;\r\n\twidth: 100%;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n\tbackground: #35424a;\r\n\tcolor: #ffffff;\r\n\tpadding-top: 30px;\r\n\tmin-height: 70px;\r\n\tborder-bottom: #e8491d 3px solid;\r\n}\r\n\r\nheader a {\r\n\tcolor: #ffffff;\r\n\ttext-decoration: none;\r\n\ttext-transform: uppercase;\r\n\tfont-size: 16px;\r\n}\r\n\r\nheader li {\r\n\tfloat: left;\r\n\tdisplay: inline;\r\n\tpadding: 0 20px 0 20px;\r\n}\r\n\r\nheader #branding {\r\n\tfloat: left;\r\n}\r\n\r\nheader #branding h1 {\r\n\tmargin: 0;\r\n}\r\n\r\nheader nav {\r\n\tfloat: right;\r\n\tmargin-top: 10px;\r\n}\r\n\r\nheader .highlight, header .current a {\r\n\tcolor: #e8491d;\r\n\tfont-weight: bold;\r\n}\r\n\r\nheader a:hover {\r\n\tcolor: #e8491d;\r\n}\r\n\r\n/* Showcase */\r\n#showcase {\r\n\tmin-height: 355px;\r\n\tbackground: url(" + __webpack_require__(/*! ../img/showcase.jpg */ 272) + ") no-repeat;\r\n\tcolor: #ffffff;\r\n\ttext-align: center;\r\n\tbackground-size: 100% 100%;\r\n\tborder-bottom: #e8491d 3px solid;\r\n}\r\n\r\n#showcase h1 {\r\n\tmargin-top: 100px;\r\n\tfont-size: 55px;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n#showcase p {\r\n\tfont-size: 20px;\r\n}\r\n\r\n/* Search */\r\n#search {\r\n\tcolor: #ffffff;\r\n\tbackground-color: #35424a;\r\n}\r\n\r\n#search form {\r\n\tfloat: right;\r\n    margin-bottom: 10px;\r\n    margin-top: 8px;\r\n    width: 26.5%;\r\n}\r\n\r\n#search input[type=\"text\"] {\r\n\tpadding: 3px;\r\n    height: 20px;\r\n    width: 100%;\r\n    border-radius: 2px;\r\n    border: 1px solid #ccc;\r\n}\r\n\r\n#search input::-webkit-calendar-picker-indicator {\r\n\tdisplay: none;\r\n}\r\n\r\n/* Newsletter */\r\n#newsletter {\r\n\tpadding: 15px;\r\n\tmargin-top: 20px;\r\n\tcolor: #ffffff;\r\n\tbackground-color: #35424a;\r\n}\r\n\r\n#newsletter h3 {\r\n\tfloat: left;\r\n}\r\n\r\n#newsletter form {\r\n\tfloat: right;\r\n\tmargin-top: 15px;\r\n}\r\n\r\n#newsletter input[type=\"email\"] {\r\n\tpadding: 4px;\r\n\theight: 25px;\r\n\twidth: 250px;\r\n}\r\n\r\n/* Boxes */\r\n#boxes {\r\n\tmargin-top: 20px;\r\n}\r\n\r\n#boxes .box {\r\n\tfloat: left;\r\n\twidth: 30%;\r\n\tpadding: 10px;\r\n\ttext-align: center;\r\n}\r\n\r\n#boxes .box > img {\r\n\twidth: 90px;\r\n}\r\n\r\n#boxes .more-image-box > img {\r\n\twidth: 300px;\r\n    height: 200px;\r\n    border: #e8491d 3px solid;\r\n}\r\n\r\n/* Sidebar */\r\naside#sidebar {\r\n\tfloat: right;\r\n\twidth: 30%;\r\n\tmargin-top: 10px;\r\n}\r\n\r\naside#sidebar .quote input, aside#sidebar .quote textarea {\r\n\twidth: 90%;\r\n\tpadding: 5px;\r\n}\r\n\r\n/* Main-col */\r\narticle#main-col {\r\n\tfloat: left;\r\n\twidth: 65%;\r\n}\r\n\r\n/* Services */\r\nul#services  li {\r\n\tlist-style: none;\r\n\tpadding: 20px;\r\n\tborder: #cccccc solid 1px;\r\n\tmargin-bottom: 5px;\r\n\tbackground: #e6e6e6;\r\n}\r\n\r\n/* Signin */\r\n#signin .button_1 {\r\n\tmargin-top: 10px;\r\n}\r\n\r\n#signin input {\r\n\tpadding: 4px;\r\n\theight: 25px;\r\n\twidth: 250px;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n\tpadding: 20px;\r\n\tcolor: #ffffff;\r\n\tbackground-color: #e8491d;\r\n\ttext-align: center;\r\n}\r\n\r\n/* Media queries */\r\n@media (max-width: 768px) {\r\n\theader #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar {\r\n\t\tfloat: none;\r\n\t\ttext-align: center;\r\n\t\twidth: 100%;\r\n\t\tpadding: 0 10px 0 10px;\r\n\t}\r\n\r\n\theader {\r\n\t\tpadding-bottom: 20px;\r\n\t}\r\n\r\n\t#showcase {\r\n\t\tmin-height: 255px;\r\n\t}\r\n\r\n\t#showcase h1 {\r\n\t\tmargin-top: 40px;\r\n\t\tfont-size: 25px;\r\n\t}\r\n\r\n\t#showcase p {\r\n\t\tfont-size: 15px;\r\n\t}\r\n\r\n\t#newsletter button, .quote button, #signin button {\r\n\t\tdisplay: block;\r\n\t\twidth: 100%;\r\n\t}\r\n\r\n\t#newsletter form input[type=\"email\"], .qutoe input, .quote textarea {\r\n\t\twidth: 100%;\r\n\t\tmargin-bottom: 5px;\r\n\t}\r\n\r\n\t#search form {\r\n\t\twidth: 100%;\r\n\t}\r\n\r\n\t#search input[type=\"text\"] {\r\n\t\twidth: 97%;\r\n\t}\r\n\r\n\t#signin input {\r\n\t\twidth: 95%;\r\n\t}\r\n}", ""]);
+	exports.push([module.id, "body {\r\n\tfont-family: Arial, Helvetica, sans-serif;\r\n    font-size: 15px;\r\n    line-height: 1.5;\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n\tbackground-color: #f4f4f4;\r\n}\r\n\r\n/* Global */\r\n.container {\r\n\twidth: 80%;\r\n\tmargin: auto;\r\n\toverflow: hidden;\r\n}\r\n\r\nul {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n\r\n.button_1 {\r\n\theight: 38px;\r\n\tbackground-color: #e8491d;\r\n\tborder: 0;\r\n\tpadding-left: 20px;\r\n\tpadding-right: 20px;\r\n\tcolor: #ffffff;\r\n\tcursor: pointer;\r\n}\r\n\r\n.dark {\r\n\tpadding: 15px;\r\n\tbackground: #35424a;\r\n\tcolor: #ffffff;\r\n\tmargin-top: 10px;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.loader {\r\n\ttext-align: center;\r\n\twidth: 100%;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n\tbackground: #35424a;\r\n\tcolor: #ffffff;\r\n\tpadding-top: 30px;\r\n\t/*min-height: 70px;*/\r\n\t/*border-bottom: #e8491d 3px solid;*/\r\n}\r\n\r\nheader a {\r\n\tcolor: #ffffff;\r\n\ttext-decoration: none;\r\n\ttext-transform: uppercase;\r\n\tfont-size: 16px;\r\n}\r\n\r\nheader li {\r\n\tfloat: left;\r\n\tdisplay: inline;\r\n\tpadding: 0 20px 0 20px;\r\n}\r\n\r\nheader #branding {\r\n\tfloat: left;\r\n}\r\n\r\nheader #branding h1 {\r\n\tmargin: 0;\r\n}\r\n\r\nheader nav {\r\n\tfloat: right;\r\n\tmargin-top: 10px;\r\n}\r\n\r\nheader .highlight, header .current a {\r\n\tcolor: #e8491d;\r\n\tfont-weight: bold;\r\n}\r\n\r\nheader a:hover {\r\n\tcolor: #e8491d;\r\n}\r\n\r\n/* Showcase */\r\n#showcase {\r\n\tmin-height: 355px;\r\n\tbackground: url(" + __webpack_require__(/*! ../img/showcase.jpg */ 272) + ") no-repeat;\r\n\tcolor: #ffffff;\r\n\ttext-align: center;\r\n\tbackground-size: 100% 100%;\r\n\tborder-bottom: #e8491d 3px solid;\r\n}\r\n\r\n#showcase h1 {\r\n\tmargin-top: 100px;\r\n\tfont-size: 55px;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n#showcase p {\r\n\tfont-size: 20px;\r\n}\r\n\r\n/* Search */\r\n#search {\r\n\tcolor: #ffffff;\r\n\tbackground-color: #35424a;\r\n\tborder-bottom: #e8491d 3px solid;\r\n}\r\n\r\n#search form {\r\n\twidth: 50%;\r\n    margin-left: 20%;\r\n    margin-top: 5px;\r\n    margin-bottom: 5px;\r\n    padding-bottom: 5px;\r\n}\r\n\r\n#search input[type=\"text\"] {\r\n\tpadding: 3px;\r\n    height: 20px;\r\n    width: 100%;\r\n    border-radius: 2px;\r\n    border: 1px solid #ccc;\r\n}\r\n\r\n#search input::-webkit-calendar-picker-indicator {\r\n\tdisplay: none;\r\n}\r\n\r\n/* Newsletter */\r\n#newsletter {\r\n\tpadding: 15px;\r\n\tmargin-top: 20px;\r\n\tcolor: #ffffff;\r\n\tbackground-color: #35424a;\r\n}\r\n\r\n#newsletter h3 {\r\n\tfloat: left;\r\n}\r\n\r\n#newsletter form {\r\n\tfloat: right;\r\n\tmargin-top: 15px;\r\n}\r\n\r\n#newsletter input[type=\"email\"] {\r\n\tpadding: 4px;\r\n\theight: 25px;\r\n\twidth: 250px;\r\n}\r\n\r\n/* Boxes */\r\n#boxes {\r\n\tmargin-top: 20px;\r\n}\r\n\r\n#boxes .box {\r\n\tfloat: left;\r\n\twidth: 30%;\r\n\tpadding: 10px;\r\n\ttext-align: center;\r\n}\r\n\r\n#boxes .box > img {\r\n\twidth: 90px;\r\n}\r\n\r\n#boxes .more-image-box > img {\r\n\twidth: 300px;\r\n    height: 200px;\r\n    border: #e8491d 3px solid;\r\n}\r\n\r\n/* Sidebar */\r\naside#sidebar {\r\n\tfloat: right;\r\n\twidth: 30%;\r\n\tmargin-top: 10px;\r\n}\r\n\r\naside#sidebar .quote input, aside#sidebar .quote textarea {\r\n\twidth: 90%;\r\n\tpadding: 5px;\r\n}\r\n\r\n/* Main-col */\r\narticle#main-col {\r\n\tfloat: left;\r\n\twidth: 65%;\r\n}\r\n\r\n/* Services */\r\nul#services  li {\r\n\tlist-style: none;\r\n\tpadding: 20px;\r\n\tborder: #cccccc solid 1px;\r\n\tmargin-bottom: 5px;\r\n\tbackground: #e6e6e6;\r\n}\r\n\r\n/* Signin */\r\n#signin .button_1 {\r\n\tmargin-top: 10px;\r\n}\r\n\r\n#signin input {\r\n\tpadding: 4px;\r\n\theight: 25px;\r\n\twidth: 250px;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n\tpadding: 20px;\r\n\tcolor: #ffffff;\r\n\tbackground-color: #e8491d;\r\n\ttext-align: center;\r\n}\r\n\r\n/* Media queries */\r\n@media (max-width: 768px) {\r\n\theader #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar {\r\n\t\tfloat: none;\r\n\t\ttext-align: center;\r\n\t\twidth: 100%;\r\n\t\tpadding: 0 10px 0 10px;\r\n\t}\r\n\r\n\theader {\r\n\t\tpadding-bottom: 20px;\r\n\t}\r\n\r\n\t#showcase {\r\n\t\tmin-height: 255px;\r\n\t}\r\n\r\n\t#showcase h1 {\r\n\t\tmargin-top: 40px;\r\n\t\tfont-size: 25px;\r\n\t}\r\n\r\n\t#showcase p {\r\n\t\tfont-size: 15px;\r\n\t}\r\n\r\n\t#newsletter button, .quote button, #signin button {\r\n\t\tdisplay: block;\r\n\t\twidth: 100%;\r\n\t}\r\n\r\n\t#newsletter form input[type=\"email\"], .qutoe input, .quote textarea {\r\n\t\twidth: 100%;\r\n\t\tmargin-bottom: 5px;\r\n\t}\r\n\r\n\t#search form {\r\n\t\twidth: 100%;\r\n\t\tmargin-left: 0;\r\n\t}\r\n\r\n\t#search input[type=\"text\"] {\r\n\t\twidth: 97%;\r\n\t}\r\n\r\n\t#signin input {\r\n\t\twidth: 95%;\r\n\t}\r\n}", ""]);
 	
 	// exports
 
@@ -29912,13 +29912,17 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _Newsletter = __webpack_require__(/*! ../containers/Newsletter */ 304);
+	var _Newsletter = __webpack_require__(/*! ../containers/Newsletter */ 303);
 	
 	var _Newsletter2 = _interopRequireDefault(_Newsletter);
 	
-	var _Footer = __webpack_require__(/*! ./Footer */ 305);
+	var _Footer = __webpack_require__(/*! ./Footer */ 304);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
+	
+	var _Search = __webpack_require__(/*! ./Search */ 305);
+	
+	var _Search2 = _interopRequireDefault(_Search);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -29971,7 +29975,8 @@
 				return _react2.default.createElement(
 					'div',
 					null,
-					_react2.default.createElement(_Header2.default, { tabs: tabs, dummyData: dummyData }),
+					_react2.default.createElement(_Header2.default, { tabs: tabs }),
+					_react2.default.createElement(_Search2.default, { data: dummyData }),
 					_react2.default.cloneElement(this.props.children, _extends({}, this.props, { tabs: tabs })),
 					_react2.default.createElement(_Newsletter2.default, null),
 					_react2.default.createElement(_Footer2.default, null)
@@ -40240,10 +40245,6 @@
 	
 	var _index = __webpack_require__(/*! ../redux/actions/index */ 277);
 	
-	var _Search = __webpack_require__(/*! ../components/Search */ 303);
-	
-	var _Search2 = _interopRequireDefault(_Search);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40266,7 +40267,6 @@
 			value: function render() {
 				var _props = this.props,
 				    tabs = _props.tabs,
-				    dummyData = _props.dummyData,
 				    currentTab = _props.currentTab,
 				    handleCurrentTab = _props.handleCurrentTab,
 				    authenticated = _props.authenticated;
@@ -40291,8 +40291,7 @@
 								' Design'
 							)
 						),
-						_react2.default.createElement(TabList, { tabs: tabs, currentTab: currentTab, handleCurrentTab: handleCurrentTab, authenticated: authenticated }),
-						_react2.default.createElement(_Search2.default, { data: dummyData })
+						_react2.default.createElement(TabList, { tabs: tabs, currentTab: currentTab, handleCurrentTab: handleCurrentTab, authenticated: authenticated })
 					)
 				);
 			}
@@ -40331,7 +40330,7 @@
 							);
 						}
 					} else {
-						if (index !== 5) {
+						if (!(index === 1 || index === 5)) {
 							return _react2.default.createElement(
 								'li',
 								{ key: index, onClick: function onClick() {
@@ -40496,8 +40495,13 @@
 	
 	function fetchMessage() {
 	    return function (dispatch) {
-	        _axios2.default.get(ROOT_URL).then(function (response) {
-	            console.info(response);
+	        _axios2.default.get(ROOT_URL, {
+	            headers: { authorization: localStorage.getItem('token') }
+	        }).then(function (response) {
+	            dispatch({
+	                type: 'FETCH_MESSAGE',
+	                payload: response.data.message
+	            });
 	        });
 	    };
 	}
@@ -42068,97 +42072,6 @@
 
 /***/ },
 /* 303 */
-/*!**************************************!*\
-  !*** ./src/app/components/Search.js ***!
-  \**************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(/*! react-dom */ 32);
-	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 233);
-	
-	var _index = __webpack_require__(/*! ../redux/actions/index */ 277);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Search = function (_Component) {
-		_inherits(Search, _Component);
-	
-		function Search(props) {
-			_classCallCheck(this, Search);
-	
-			var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this, props));
-	
-			_this.state = {
-				searchParam: ''
-			};
-			return _this;
-		}
-	
-		_createClass(Search, [{
-			key: 'render',
-			value: function render() {
-				var _this2 = this;
-	
-				var searchParam = this.state.searchParam,
-				    data = this.props.data;
-	
-				searchParam = searchParam.trim().toLowerCase();
-				if (searchParam.length > 0) {
-					data = data.filter(function (value) {
-						return value.title.toLowerCase().match(searchParam);
-					});
-				}
-				return _react2.default.createElement(
-					'div',
-					{ id: 'search' },
-					_react2.default.createElement(
-						'form',
-						{ ref: 'searchForm', className: 'search-form' },
-						_react2.default.createElement('input', { type: 'text', list: 'dataList', ref: 'searchParam', value: searchParam, onChange: function onChange(e) {
-								return _this2.setState({ searchParam: e.target.value });
-							}, placeholder: 'Search images...' })
-					),
-					_react2.default.createElement(
-						'datalist',
-						{ id: 'dataList' },
-						searchParam ? data.map(function (value, i) {
-							return _react2.default.createElement(
-								'option',
-								{ key: i },
-								value.title
-							);
-						}) : ''
-					)
-				);
-			}
-		}]);
-	
-		return Search;
-	}(_react.Component);
-	
-	exports.default = Search;
-
-/***/ },
-/* 304 */
 /*!******************************************!*\
   !*** ./src/app/containers/Newsletter.js ***!
   \******************************************/
@@ -42289,7 +42202,7 @@
 	})(Newsletter);
 
 /***/ },
-/* 305 */
+/* 304 */
 /*!**************************************!*\
   !*** ./src/app/components/Footer.js ***!
   \**************************************/
@@ -42345,6 +42258,103 @@
 	}(_react.Component);
 	
 	exports.default = Footer;
+
+/***/ },
+/* 305 */
+/*!**************************************!*\
+  !*** ./src/app/components/Search.js ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 32);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 233);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 178);
+	
+	var _index = __webpack_require__(/*! ../redux/actions/index */ 277);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Search = function (_Component) {
+		_inherits(Search, _Component);
+	
+		function Search(props) {
+			_classCallCheck(this, Search);
+	
+			var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this, props));
+	
+			_this.state = {
+				searchParam: ''
+			};
+			return _this;
+		}
+	
+		_createClass(Search, [{
+			key: 'render',
+			value: function render() {
+				var _this2 = this;
+	
+				var searchParam = this.state.searchParam,
+				    data = this.props.data;
+	
+				searchParam = searchParam.trim().toLowerCase();
+				if (searchParam.length > 0) {
+					data = data.filter(function (value) {
+						return value.title.toLowerCase().match(searchParam);
+					});
+				}
+				return _react2.default.createElement(
+					'div',
+					{ id: 'search' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'container' },
+						_react2.default.createElement(
+							'form',
+							{ ref: 'searchForm', className: 'search-form' },
+							_react2.default.createElement('input', { type: 'text', list: 'dataList', ref: 'searchParam', value: searchParam, onChange: function onChange(e) {
+									return _this2.setState({ searchParam: e.target.value });
+								}, placeholder: 'Search images...' })
+						),
+						_react2.default.createElement(
+							'datalist',
+							{ id: 'dataList' },
+							searchParam ? data.map(function (value, i) {
+								return _react2.default.createElement(
+									'option',
+									{ key: i },
+									value.title
+								);
+							}) : ''
+						)
+					)
+				);
+			}
+		}]);
+	
+		return Search;
+	}(_react.Component);
+	
+	exports.default = Search;
 
 /***/ },
 /* 306 */
@@ -42604,6 +42614,11 @@
 		}
 	
 		_createClass(About, [{
+			key: 'componentWillMount',
+			value: function componentWillMount() {
+				this.props.fetchMessage();
+			}
+		}, {
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
@@ -42622,6 +42637,16 @@
 									'h1',
 									{ className: 'page-title' },
 									'About Us'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									_react2.default.createElement(
+										'strong',
+										null,
+										'Message: '
+									),
+									this.props.message
 								),
 								_react2.default.createElement(
 									'p',
@@ -42666,7 +42691,11 @@
 		return About;
 	}(_react.Component);
 	
-	exports.default = (0, _reactRedux.connect)(null, actions)(About);
+	exports.default = (0, _reactRedux.connect)(function (state, ownProps) {
+		return {
+			message: state.auth.message
+		};
+	}, actions)(About);
 
 /***/ },
 /* 311 */
@@ -55022,6 +55051,8 @@
 	            return _extends({}, state, { authenticated: false });
 	        case 'AUTH_ERROR':
 	            return _extends({}, state, { error: action.payload });
+	        case 'FETCH_MESSAGE':
+	            return _extends({}, state, { message: action.payload });
 	        default:
 	            return state;
 	    }
@@ -55424,6 +55455,18 @@
 	
 	function validate(values) {
 		var errors = {};
+	
+		if (!values.email) {
+			errors.email = 'Please enter email';
+		}
+	
+		if (!values.password) {
+			errors.password = 'Please enter password';
+		}
+	
+		if (!values.passwordConfirm) {
+			errors.passwordConfirm = 'Please enter password confirmation';
+		}
 	
 		if (values.password !== values.passwordConfirm) {
 			errors.password = 'Password must match';

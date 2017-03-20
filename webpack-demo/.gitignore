@@ -6,4 +6,4 @@ bundle.js.map
 *.log
 course.md
 video-notes/
-.vscode/
+.vscode
