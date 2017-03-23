@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+bundle.js
+bundle.js.map
+*.log
+course.md
+video-notes/
+.vscode
