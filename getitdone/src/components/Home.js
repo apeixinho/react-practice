@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Toggle from 'material-ui/Toggle';
 import logo from '../images/logo.svg';
-import '../stylesheets/App.css';
 
 class Home extends Component {
   render() {
@@ -17,7 +16,7 @@ class Home extends Component {
         <Toggle
           label="Logged"
           defaultToggled={true}
-          onToggle={this.props.handleLoginToggle}
+          onToggle={this.props.toggleLogin}
           labelPosition="right"
         />
       </div>
@@ -25,4 +24,12 @@ class Home extends Component {
   }
 }
 
-export default Home;
+import { connect } from 'react-redux';
+import { toggleLogin } from '../redux/actions/index';
+
+export default connect(
+	null,
+	{
+		toggleLogin: toggleLogin
+	}
+)(Home);

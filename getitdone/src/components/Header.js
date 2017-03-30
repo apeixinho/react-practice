@@ -12,25 +12,24 @@ class Header extends Component {
             <div>
                 <AppBar
                     title={<AppBarTitleCustom/>}
-                    onLeftIconButtonTouchTap={this.props.handleDrawerToggle}
-                    iconElementRight={
-                        this.props.logged?<UserInfoTray/>:<FlatButton onTouchTap={this.props.handleOpen} label="Signin / Signup"/>
-                    }
-                />
-                <LeftDrawer 
-                    open={this.props.open}
-                    toggleDrawer={this.props.handleDrawerToggle}
-                />
-                <SigninSignupDialog 
-                    currentTab={this.props.currentTab}
-                    handleChange={this.props.handleChange}
-                    openDialog={this.props.openDialog}
-                    handleClose={this.props.handleClose}
-                    handleFormSubmit={this.props.handleFormSubmit}
-                />
+                    onLeftIconButtonTouchTap={this.props.toggleDrawer}
+                    iconElementRight={this.props.isLogged?<UserInfoTray/>:<FlatButton onTouchTap={this.props.openDialog} label="Signin / Signup"/>}/>
+                <LeftDrawer/>
+                <SigninSignupDialog/>
             </div>
         );
     }
 }
 
-export default Header;
+import { connect } from 'react-redux';
+import { toggleDrawer, openDialog } from '../redux/actions/index';
+
+export default connect(
+	(state, ownProps) => ({
+		isLogged: state.isLogged
+	}),
+	{
+		toggleDrawer: toggleDrawer,
+        openDialog: openDialog
+	}
+)(Header);
