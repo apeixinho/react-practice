@@ -35,7 +35,7 @@ class SigninSignupDialog extends Component {
 
         return (
             <Dialog
-                title={<CustomTabs currentTab={this.props.currentTab} handleChange={this.props.handleChange}/>}
+                title={<DialogTitleCustom currentTab={this.props.currentTab} handleChange={this.props.handleChange}/>}
                 actions={actions}
                 modal={false}
                 open={this.props.openDialog}
@@ -44,7 +44,7 @@ class SigninSignupDialog extends Component {
     }
 }
 
-function CustomTabs(props) {
+function DialogTitleCustom(props) {
     return (
         <Tabs
             style={styles.tabs}
