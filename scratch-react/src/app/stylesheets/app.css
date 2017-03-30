@@ -7,3 +7,7 @@ body {
 /*div.container {
     background: #e8e8e8;
 }*/
+.mn-home {
+    background: url('../images/homebg.gif');
+    height: 638px;
+}
