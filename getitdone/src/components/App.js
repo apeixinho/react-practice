@@ -12,7 +12,7 @@ class App extends Component {
                 <div>
                     <Header/>
                     {/*<Carousel/>*/}
-                    {React.cloneElement(this.props.children, {...this.props})}
+                    {React.cloneElement(this.props.children, this.props)}
                 </div>
             </MuiThemeProvider>
         );
