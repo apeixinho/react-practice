@@ -6,7 +6,7 @@ import MenuItem from 'material-ui/MenuItem';
 class LeftDrawer extends Component {
     render() {
         return (
-            <Drawer open={this.props.openDrawer}>
+            <Drawer open={this.props.isDrawerOpen}>
                 <AppBar title="GETITDONE" onLeftIconButtonTouchTap={this.props.toggleDrawer}/>
                 <MenuItem onTouchTap={this.props.toggleDrawer}>Item One</MenuItem>
                 <MenuItem onTouchTap={this.props.toggleDrawer}>Item Two</MenuItem>
@@ -20,7 +20,7 @@ import { toggleDrawer } from '../redux/actions/index';
 
 export default connect(
 	(state, ownProps) => ({
-		openDrawer: state.openDrawer
+		isDrawerOpen: state.isDrawerOpen
 	}),
 	{
 		toggleDrawer: toggleDrawer

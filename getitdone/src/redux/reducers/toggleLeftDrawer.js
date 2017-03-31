@@ -1,4 +1,4 @@
-const openDrawer = (state = false, action) => {
+const isDrawerOpen = (state = false, action) => {
     switch (action.type) {
         case 'OPENED_DRAWER':
             return !state;
@@ -7,4 +7,4 @@ const openDrawer = (state = false, action) => {
     }
 };
 
-export default openDrawer;
+export default isDrawerOpen;

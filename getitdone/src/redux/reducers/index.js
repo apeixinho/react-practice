@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 import { reducer as form } from 'redux-form';
-import openDrawer from './openDrawer';
-import isSignInUp from './isSignInUp';
-import isLogged from './isLogged';
-import isDialogOpen from './isDialogOpen';
+import isDrawerOpen from './toggleLeftDrawer';
+import isSignInUp from './toggleSignInUpForm';
+import isLogged from './toggleLoggedIn';
+import isDialogOpen from './toggleSignInUpDialog';
 
 export default combineReducers({
-    openDrawer,
+    isDrawerOpen,
     isSignInUp,
     isLogged,
     isDialogOpen,
