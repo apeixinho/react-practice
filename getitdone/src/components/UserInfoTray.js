@@ -19,10 +19,20 @@ class UserInfoTray extends Component {
                 <MenuItem primaryText="Monjit Nunisa" leftIcon={<Person/>}/>
                 <MenuItem primaryText="Settings" leftIcon={<Settings/>}/>
                 <Divider/>
-                <MenuItem primaryText="Sign Out" leftIcon={<PowerSettingsNew/>}/>
+                <MenuItem primaryText="Sign Out" leftIcon={<PowerSettingsNew/>} onClick={this.props.toggleLogin}/>
             </IconMenu>
         );
     }
 }
 
-export default UserInfoTray;
+import { connect } from 'react-redux';
+import { toggleLogin } from '../redux/actions/index';
+
+export default connect(
+	(state, ownProps) => ({
+		isLogged: state.isLogged
+	}),
+	{
+		toggleLogin: toggleLogin
+	}
+)(UserInfoTray);
