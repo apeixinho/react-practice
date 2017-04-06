@@ -9,13 +9,6 @@ const styles = {
 };
 
 class Signin extends Component {
-    componentDidMount() {
-        this.refs.name          // the Field
-        .getRenderedComponent() // on Field, returns ReduxFormMaterialUITextField
-        .getRenderedComponent() // on ReduxFormMaterialUITextField, returns TextField
-        .focus()                // on TextField
-    }
-
     render() {
         const { handleSubmit } = this.props;
         return (
@@ -35,7 +28,6 @@ class Signin extends Component {
                             hintText="Enter password..."
                             floatingLabelText="Password"
                             validate={isRequired}
-                            ref="name" withRef
                             style={styles.textField}/>
                     </div>
                 </form>

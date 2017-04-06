@@ -28,7 +28,6 @@ class Signup extends Component {
                             hintText="Enter password..."
                             floatingLabelText="Password"
                             validate={[isRequired]}
-                            ref="name" withRef
                             style={styles.textField}/>
                     </div>
                     <div>
@@ -37,7 +36,6 @@ class Signup extends Component {
                             hintText="Enter password..."
                             floatingLabelText="Confirm Password"
                             validate={[isRequired]}
-                            ref="name" withRef
                             style={styles.textField}/>
                     </div>
                 </form>
